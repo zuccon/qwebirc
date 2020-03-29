@@ -97,7 +97,7 @@ class QWebIRCClient(basic.LineReceiver):
       else:
         dispip = "%s/%s" % (hostname, ip)
 
-      self.write("USER %s bleh bleh :%s - %s" % (ident, dispip, realname))
+      self.write("USER %s bleh bleh : %s" % (ident, realname))
 
     if pass_ is not None:
       self.write("PASS :%s" % pass_)
